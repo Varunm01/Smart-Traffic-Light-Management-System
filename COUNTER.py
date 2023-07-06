@@ -1,5 +1,5 @@
 from ultralytics import YOLO
-# from TRAFFIC_TIMING import traffic_light
+from TRAFFIC_TIMING import traffic_light
 import cv2
 import cvzone
 import math
@@ -82,7 +82,7 @@ conn = urllib2.urlopen(baseURL + '&field1=%s&field2=%s&field3=%s' % (count1, cou
 print("---")
 print("Data sent to cloud")
 
-# traffic_light(count1, count2, count3)
+traffic_light(count1, count2, count3)
 
 cv2.imshow('ImageRegion', mask_img1)
 cv2.waitKey(0)
